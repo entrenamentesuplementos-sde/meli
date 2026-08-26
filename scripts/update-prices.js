@@ -68,6 +68,14 @@ async function fetchProductInfo(meliUrl) {
       }
     }
 
+    // Override específico si se requiere la variante Full para algún producto particular
+    if (meliUrl === 'https://meli.la/1qBjZtH') {
+      currentPrice = 33000;
+      previousPrice = 69719;
+      discount = 52;
+      installments = '3 cuotas sin interés de $11.000';
+    }
+
     return {
       url: meliUrl,
       title,
@@ -94,7 +102,9 @@ function formatProductMap(products) {
     const discountStr = (p.discount && p.previousPrice > p.currentPrice) ? `${p.discount}% OFF` : '';
 
     let instStr = p.installments || '';
-    if (instStr.includes('Mismo precio 3 cuotas')) {
+    if (instStr.includes('sin interés')) {
+      // Mantener cuotas sin interés establecidas
+    } else if (instStr.includes('Mismo precio 3 cuotas')) {
       const perCuota = formatMoney(p.currentPrice / 3);
       instStr = `3 cuotas sin interés de ${perCuota}`;
     } else if (instStr.includes('Mismo precio 6 cuotas')) {
