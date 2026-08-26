@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EntrenaMente – Suplementos, Equipamiento y Quemadores de Grasa</title>
+  <meta name="description"
+    content="Tu tienda fitness online. Suplementos, equipamiento de entrenamiento, quemadores de grasa y recetas para bajar de peso. Compra segura por Mercado Libre." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+
+<body>
+
+  <!-- URGENT BANNER -->
+  <div class="urgent-banner" id="urgentBanner">
+    <div class="banner-phrases">
+      <div class="banner-phrase" style="animation-delay:0s">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+          <line x1="1" y1="10" x2="23" y2="10" />
+        </svg>
+        Hasta 12 cuotas sin interés
+      </div>
+      <div class="banner-phrase" style="animation-delay:3s">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+          <path d="M12 6v6l4 2" />
+        </svg>
+        Ofertas por tiempo limitado
+      </div>
+      <div class="banner-phrase" style="animation-delay:6s">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+        </svg>
+        Últimas unidades disponibles
+      </div>
+      <div class="banner-phrase" style="animation-delay:9s">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="1" y="3" width="15" height="13" rx="1" />
+          <path d="M16 8h4l3 5v3h-7V8z" />
+          <circle cx="5.5" cy="18.5" r="2.5" />
+          <circle cx="18.5" cy="18.5" r="2.5" />
+        </svg>
+        Envíos por Mercado Envíos
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#" class="logo">Entrena<span>Mente</span></a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#" id="sidebarToggle"><span style="color:var(--green)">☰</span> Categorías</a></li>
+        <li><a href="#productos">Suplementos</a></li>
+        <li><a href="#quemadores">Quemadores</a></li>
+        <li><a href="#recetas">Recetas</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <!-- Nav Search (Ecommerce Style) -->
+      <div class="nav-search-bar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" class="nav-search-icon">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="navSearchInput" placeholder="¿Qué estás buscando?" aria-label="Buscar en la tienda" />
+      </div>
+
+      <a href="#productos" class="nav-cta">Comprar ahora</a>
+    </div>
+  </nav>
+
+  <!-- SIDEBAR DRAWER (Menu Lateral) -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a href="#" class="logo">Entrena<span>Mente</span></a>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Cerrar">&times;</button>
+    </div>
+    <div class="sidebar-content">
+      <div class="sidebar-section">
+        <h4>Categorías de Tienda</h4>
+        <ul>
+          <li>
+            <a href="#productos" class="sidebar-cat-link" data-cat="all">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </span>
+              Todos los productos
+            </a>
+          </li>
+          <li>
+            <a href="#productos" class="sidebar-cat-link" data-cat="enfoque">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.46 2.5 2.5 0 0 1-1.78-4.23 2.5 2.5 0 0 1-.84-4.59A2.5 2.5 0 0 1 9.5 2z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.46 2.5 2.5 0 0 0 1.78-4.23 2.5 2.5 0 0 0 .84-4.59A2.5 2.5 0 0 0 14.5 2z"></path></svg>
+              </span>
+              Enfoque &amp; Claridad
+            </a>
+          </li>
+          <li>
+            <a href="#productos" class="sidebar-cat-link" data-cat="salud capilar">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+              </span>
+              Salud Capilar
+            </a>
+          </li>
+          <li>
+            <a href="#productos" class="sidebar-cat-link" data-cat="vitalidad">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </span>
+              Vitalidad Celular
+            </a>
+          </li>
+          <li>
+            <a href="#productos" class="sidebar-cat-link" data-cat="rendimiento">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5h11"></path><path d="M6.5 17.5h11"></path><path d="M3 9.5h3v5H3z"></path><path d="M18 9.5h3v5h-3z"></path><path d="M6 7.5v9"></path><path d="M18 7.5v9"></path></svg>
+              </span>
+              Rendimiento Físico
+            </a>
+          </li>
+          <li>
+            <a href="#productos" class="sidebar-cat-link" data-cat="sueño">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+              </span>
+              Sueño &amp; Bienestar
+            </a>
+          </li>
+          <li>
+            <a href="#productos" class="sidebar-cat-link" data-cat="equipamiento">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v10"></path><path d="M8 12h8"></path></svg>
+              </span>
+              Equipamiento
+            </a>
+          </li>
+          <li>
+            <a href="#quemadores" class="sidebar-cat-link" data-cat="quemadores">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg>
+              </span>
+              Quemadores de Grasa
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <h4>Secciones de Interés</h4>
+        <ul>
+          <li>
+            <a href="#recetas">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+              </span>
+              Recetas Fit
+            </a>
+          </li>
+          <li>
+            <a href="#recetas">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path></svg>
+              </span>
+              Consejos de Pérdida
+            </a>
+          </li>
+          <li>
+            <a href="#faq">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+              </span>
+              Preguntas Frecuentes
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <h4>Soporte y Contacto</h4>
+        <ul>
+          <li>
+            <a href="mailto:entrenamentesuplementos@gmail.com">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </span>
+              Email de Soporte
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/entrenamente_suplementos" target="_blank" rel="noopener">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </span>
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://tiktok.com/@entrenamentesuplementos" target="_blank" rel="noopener">
+              <span class="sidebar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+              </span>
+              TikTok
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- HERO — COMPACT -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-bg">
+      <img src="assets/images/hero-new.jpg" alt="EntrenaMente hero" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">Tu Tienda Fitness Online</div>
+      <h1 class="hero-headline reveal">Tu mejor versión<br /><span class="accent">empieza hoy.</span></h1>
+      <p class="hero-sub reveal">Suplementos, equipamiento y todo lo que necesitás para transformar tu cuerpo y mente.</p>
+      <div class="hero-ctas reveal">
+        <a href="#productos" class="btn btn-primary">Explorar productos</a>
+        <a href="#quemadores" class="btn btn-ghost">🔥 Quemadores de grasa</a>
+      </div>
+      <div class="trust-badges reveal">
+        <span>⭐ Miles de clientes satisfechos</span>
+        <span class="dot">•</span>
+        <span>🛡️ Compra segura por Mercado Libre</span>
+      </div>
+    </div>
+    <a href="#ofertas" class="scroll-indicator" aria-label="Scroll"><span class="scroll-line"></span></a>
+  </section>
+
+  <!-- OFFERS CAROUSEL -->
+  <section id="ofertas">
+    <div class="container">
+      <div class="carousel-header">
+        <h2 class="reveal">🔥 Ofertas del momento</h2>
+        <div class="carousel-nav">
+          <button id="carouselPrev" aria-label="Anterior">❮</button>
+          <button id="carouselNext" aria-label="Siguiente">❯</button>
+        </div>
+      </div>
+      <div class="offers-track" id="offersTrack">
+        <a href="https://meli.la/2oRXm9R" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">25% OFF</span>
+            <img src="assets/images/bisglicinato-magnesio.png" alt="Bisglicinato de Magnesio" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Bisglicinato de Magnesio</h4>
+            <span class="offer-price">$14.900</span><span class="offer-price-old">$20.000</span>
+            <div class="offer-installments">3 cuotas sin interés de $4.967</div>
+          </div>
+        </a>
+        <a href="https://meli.la/11erCxc" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">53% OFF</span>
+            <img src="assets/images/mancuernas.webp" alt="Mancuernas 3kg Fitnesas" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Mancuernas 3kg (Par)</h4>
+            <span class="offer-price">$14.760</span><span class="offer-price-old">$31.500</span>
+            <div class="offer-installments">6 cuotas de $4.476</div>
+          </div>
+        </a>
+        <a href="https://meli.la/2D2Dbct" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">25% OFF</span>
+            <img src="assets/images/combo-quemador.webp" alt="Combo Quemador Carnitina + Hydroxy Max" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Combo Quemador ENA</h4>
+            <span class="offer-price">$34.274</span><span class="offer-price-old">$45.699</span>
+            <div class="offer-installments">6 cuotas de $28.640</div>
+          </div>
+        </a>
+        <a href="https://meli.la/1XtFf4v" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">46% OFF</span>
+            <img src="assets/images/melena-leon.png" alt="Melena de León" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Melena de León + Vit C</h4>
+            <span class="offer-price">$26.828</span><span class="offer-price-old">$49.750</span>
+            <div class="offer-installments">6 cuotas de $6.036</div>
+          </div>
+        </a>
+        <a href="https://meli.la/1HW2Dbb" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">34% OFF</span>
+            <img src="assets/images/colchoneta.webp" alt="Colchoneta Yoga Mat 6mm Tushka" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Colchoneta Yoga Mat 6mm Tushka</h4>
+            <span class="offer-price">$12.499</span><span class="offer-price-old">$18.999</span>
+            <div class="offer-installments">6 cuotas de $2.812</div>
+          </div>
+        </a>
+        <a href="https://meli.la/33dv3cw" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">20% OFF</span>
+            <img src="assets/images/quemador-grasa.webp" alt="Quemador ENA Ripped Max" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Quemador ENA Ripped Max</h4>
+            <span class="offer-price">$13.500</span><span class="offer-price-old">$38.814</span>
+            <div class="offer-installments">6 cuotas de $3.038</div>
+          </div>
+        </a>
+        <a href="https://meli.la/2a4wMPM" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">46% OFF</span>
+            <img src="assets/images/biotina.png" alt="Biotina DR.SKIN" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Biotina DR.SKIN</h4>
+            <span class="offer-price">$11.290</span><span class="offer-price-old">$21.250</span>
+            <div class="offer-installments">6 cuotas de $2.540</div>
+          </div>
+        </a>
+        <a href="https://meli.la/2KZCDEF" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">46% OFF</span>
+            <img src="assets/images/balanza.webp" alt="Balanza Digital Bluetooth" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Balanza Digital Bluetooth</h4>
+            <span class="offer-price">$14.999</span><span class="offer-price-old">$27.999</span>
+            <div class="offer-installments">3 cuotas sin interés de $5.000</div>
+          </div>
+        </a>
+        <a href="https://meli.la/2fmgo1Y" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">36% OFF</span>
+            <img src="assets/images/nad-resveratrol.png" alt="NAD + Resveratrol" />
+          </div>
+          <div class="offer-card-info">
+            <h4>NAD + Resveratrol</h4>
+            <span class="offer-price">$29.725</span><span class="offer-price-old">$46.850</span>
+            <div class="offer-installments">3 cuotas sin interés de $9.908</div>
+          </div>
+        </a>
+        <a href="https://meli.la/1wGBf6g" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">42% OFF</span>
+            <img src="assets/images/piso-goma-eva.webp" alt="Piso Goma Eva Encastrable" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Piso Goma Eva x4</h4>
+            <span class="offer-price">$18.990</span><span class="offer-price-old">$32.990</span>
+            <div class="offer-installments">6 cuotas de $13.260</div>
+          </div>
+        </a>
+        <a href="https://meli.la/2unQqQH" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">25% OFF</span>
+            <img src="assets/images/creatina-ena.png" alt="Creatina ENA" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Creatina ENA x300g</h4>
+            <span class="offer-price">$32.000</span><span class="offer-price-old">$42.667</span>
+            <div class="offer-installments">6 cuotas de $7.200</div>
+          </div>
+        </a>
+        <a href="https://meli.la/2Fe6o86" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">5% OFF</span>
+            <img src="assets/images/maca-peruana.webp" alt="Maca Peruana Labs Nutrition" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Maca Peruana 500mg</h4>
+            <span class="offer-price">$17.900</span><span class="offer-price-old">$35.157</span>
+            <div class="offer-installments">6 cuotas de $17.845</div>
+          </div>
+        </a>
+        <a href="https://meli.la/1UNqWrg" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">20% OFF</span>
+            <img src="assets/images/creatina-ena-nueva.webp" alt="Creatina ENA Fruit Punch" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Creatina ENA Fruit Punch</h4>
+            <span class="offer-price">$30.000</span><span class="offer-price-old">$37.501</span>
+            <div class="offer-installments">6 cuotas de $11.926</div>
+          </div>
+        </a>
+        <a href="https://meli.la/1FY8bZy" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">20% OFF</span>
+            <img src="assets/images/bisglicinato-magnesio-nuevo.webp" alt="Bisglicinato Magnesio Labs Nutrition" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Bisglicinato Magnesio Labs</h4>
+            <span class="offer-price">$16.501</span><span class="offer-price-old">$20.626</span>
+            <div class="offer-installments">3 cuotas sin interés de $5.500</div>
+          </div>
+        </a>
+        <a href="https://meli.la/2YW68Ap" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <span class="offer-discount">8% OFF</span>
+            <img src="assets/images/arginina-citrulina-ginseng.webp" alt="L-Arginina + L-Citrulina + Ginseng" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Arginina + Citrulina + Ginseng</h4>
+            <span class="offer-price">$18.859</span><span class="offer-price-old">$20.499</span>
+            <div class="offer-installments">6 cuotas de $6.323</div>
+          </div>
+        </a>
+        <a href="https://meli.la/32tnKSi" target="_blank" rel="noopener" class="offer-card">
+          <div class="offer-card-img">
+            <img src="assets/images/cafe-verde.webp" alt="Café Verde Vitatech" />
+          </div>
+          <div class="offer-card-info">
+            <h4>Café Verde Vitatech</h4>
+            <span class="offer-price">$17.632</span>
+            <div class="offer-installments">6 cuotas de $3.967</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section id="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-num">+2.000</span>
+          <span class="stat-label">Clientes satisfechos</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-num">4.9★</span>
+          <span class="stat-label">Calificación promedio</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Seguro con ML</span>
+        </div>
+        <div class="stat-item reveal">
+          <span class="stat-num">24hs</span>
+          <span class="stat-label">Despacho promedio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title reveal">Nuestros <span class="accent">productos</span></h2>
+        <p class="section-sub reveal">Suplementos, equipamiento y todo para tu rendimiento. Comprá seguro por Mercado Libre.</p>
+      </div>
+
+      <div class="ml-clarification reveal"
+        style="text-align: center; margin-bottom: 2.5rem; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 8px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px; color: #009ee3;">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+          <path d="M9 12l2 2 4-4"></path>
+        </svg>
+        <span>Todos los botones de compra redirigen a <strong style="color: #009ee3;">Mercado
+            Libre</strong>, garantizando una transacción 100% segura.</span>
+      </div>
+
+      <div class="products-controls reveal">
+        <div class="search-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="productSearch" placeholder="Buscar productos por nombre o beneficio..."
+            aria-label="Buscar productos por nombre o beneficio" class="product-search-input" />
+        </div>
+        <select id="productCategory" class="product-category-select" title="Filtrar productos por categoría" aria-label="Filtrar productos por categoría">
+          <option value="all">Todas las categorías</option>
+          <option value="enfoque">Enfoque & Claridad</option>
+          <option value="salud capilar">Salud Capilar</option>
+          <option value="vitalidad">Vitalidad Celular</option>
+          <option value="rendimiento">Rendimiento Físico</option>
+          <option value="sueño">Sueño & Bienestar</option>
+          <option value="proteína">Proteína & Músculo</option>
+          <option value="salud muscular">Salud Muscular</option>
+          <option value="bienestar">Bienestar & Relax</option>
+          <option value="equipamiento">Equipamiento</option>
+          <option value="quemadores">Quemadores de Grasa</option>
+        </select>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <!-- INTERCALADOS: SUPLEMENTOS, QUEMADORES Y EQUIPAMIENTO -->
+        <article class="product-card reveal" id="prod-quemador-grasa">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: #ff3366; color: #fff;">🔥 Quemador Top</div>
+            <img src="assets/images/quemador-grasa.webp" alt="Quemador Grasa ENA Ripped Max" />
+            <div class="product-glow glow-red"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Quemadores de grasa</span>
+            <h3>Quemador Grasa ENA Ripped Max (60 tabs)</h3>
+            <p>Fórmula avanzada con Carnitina y Colina para acelerar el metabolismo y maximizar la quema de grasas.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$13.500</span>
+              <span class="price-old">$38.814</span>
+              <span class="price-discount">20% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $3.038</div>
+            <a href="https://meli.la/33dv3cw" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-creatina-ena">
+          <div class="product-img-wrap">
+            <div class="urgency-badge">Más vendido</div>
+            <img src="assets/images/creatina-ena.png" alt="Creatina ENA x300g" />
+            <div class="product-glow glow-blue"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Rendimiento físico</span>
+            <h3>Creatina ENA x300g</h3>
+            <p>Creatina monohidrato micronizada para máxima absorción, potencia muscular y recuperación rápida.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$32.000</span>
+              <span class="price-old">$42.667</span>
+              <span class="price-discount">25% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $7.200</div>
+            <a href="https://meli.la/2unQqQH" target="_blank" rel="noopener" class="btn btn-buy">Lo necesito ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-mancuernas">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: var(--green); color: #fff;">Más vendido</div>
+            <img src="assets/images/mancuernas.webp" alt="Par De Mancuernas 3kg C/u Fitnesas" />
+            <div class="product-glow glow-blue"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Equipamiento</span>
+            <h3>Par De Mancuernas 3kg (par)</h3>
+            <p>Pesas recubiertas premium Fitnesas. Ergonómicas y antideslizantes para tu rutina en casa o gimnasio.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$14.760</span>
+              <span class="price-old">$31.500</span>
+              <span class="price-discount">53% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $4.476</div>
+            <a href="https://meli.la/11erCxc" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-melena">
+          <div class="product-img-wrap">
+            <div class="urgency-badge pulse" style="background: #eab308; color: #000;">⚡ Oferta Relámpago <span class="countdown" data-time="14400">04:00:00</span></div>
+            <img src="assets/images/melena-leon.png" alt="Melena de León" />
+            <div class="product-glow glow-purple"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Enfoque &amp; Claridad</span>
+            <h3>Melena de León + Vit C</h3>
+            <p>Potenciador cognitivo para mejorar tu enfoque, memoria, concentración y claridad mental.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$26.828</span>
+              <span class="price-old">$49.750</span>
+              <span class="price-discount">46% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $6.036</div>
+            <a href="https://meli.la/1XtFf4v" target="_blank" rel="noopener" class="btn btn-buy">Quiero este resultado</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-combo-quemador">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: #ff3366; color: #fff;">🔥 Combo Ahorro</div>
+            <img src="assets/images/combo-quemador.webp" alt="Combo Carnitina + Hydroxy Max ENA" />
+            <div class="product-glow glow-red"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Quemadores de grasa</span>
+            <h3>Combo Carnitina + Hydroxy Max ENA</h3>
+            <p>Doble acción quemadora: Carnitina pura + comprimidos Hydroxy Max para resultados acelerados.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$34.274</span>
+              <span class="price-old">$45.699</span>
+              <span class="price-discount">25% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $28.640</div>
+            <a href="https://meli.la/2D2Dbct" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-bisglicinato">
+          <div class="product-img-wrap">
+            <div class="urgency-badge pulse" style="background: #eab308; color: #000;">⚡ Oferta Relámpago <span class="countdown" data-time="14400">04:00:00</span></div>
+            <img src="assets/images/bisglicinato-magnesio.png" alt="Bisglicinato de Magnesio" />
+            <div class="product-glow glow-green"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Bienestar &amp; Relax</span>
+            <h3>Bisglicinato de Magnesio</h3>
+            <p>Tu aliado contra el estrés, calambres musculares y para recuperar energía diaria.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$14.900</span>
+              <span class="price-old">$20.000</span>
+              <span class="price-discount">25% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">3 cuotas sin interés de $4.967</div>
+            <a href="https://meli.la/2oRXm9R" target="_blank" rel="noopener" class="btn btn-buy">Lo necesito ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-colchoneta">
+          <div class="product-img-wrap">
+            <div class="urgency-badge pulse" style="background: #eab308; color: #000;">⚡ Oferta Relámpago</div>
+            <img src="assets/images/colchoneta.webp" alt="Colchoneta Yoga Mat 6mm Tushka" />
+            <div class="product-glow glow-purple"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Equipamiento</span>
+            <h3>Colchoneta Yoga Mat 6mm Tushka</h3>
+            <p>Antideslizante de alta densidad con correa (173 x 61 cm). Ideal para yoga, pilates, stretching y entrenamiento funcional.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$12.499</span>
+              <span class="price-old">$18.999</span>
+              <span class="price-discount">34% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $2.812</div>
+            <a href="https://meli.la/1HW2Dbb" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-carnitina">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: #ff3366; color: #fff;">🔥 Quemador</div>
+            <img src="assets/images/carnitina.webp" alt="Carnitina Pro Burn x60 Caps" />
+            <div class="product-glow glow-red"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Quemadores de grasa</span>
+            <h3>Carnitina Pro Burn X (60 caps)</h3>
+            <p>Convierte la grasa acumulada en energía limpia durante tus entrenamientos intensos.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$17.100</span>
+              <span class="price-old">$19.000</span>
+              <span class="price-discount">10% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $6.323</div>
+            <a href="https://meli.la/1f5e7xK" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-whey">
+          <div class="product-img-wrap">
+            <div class="urgency-badge">Pocas unidades</div>
+            <img src="assets/images/whey-protein-hardcore.jpg" alt="Whey Protein 1kg" />
+            <div class="product-glow"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Proteína &amp; Músculo</span>
+            <h3>Whey Protein 1kg</h3>
+            <p>Más músculo, más energía, más resultados. Proteína de suero de alta pureza y asimilación.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$16.500</span>
+              <span class="price-old">$20.000</span>
+              <span class="price-discount">20% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">3 cuotas sin interés de $5.500</div>
+            <a href="https://meli.la/1wUgGZm" target="_blank" rel="noopener" class="btn btn-buy">Lo necesito ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-kit-entrenamiento">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: #009ee3; color: #fff;">Kit Completo</div>
+            <img src="assets/images/kit-entrenamiento.webp" alt="Kit Entrenamiento Funcional Fuerte" />
+            <div class="product-glow glow-blue"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Equipamiento</span>
+            <h3>Kit de Entrenamiento Fuerte</h3>
+            <p>Incluye colchoneta, pesas, rueda abdominal, banda elástica y tobilleras para entrenamiento total.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$83.200</span>
+              <span class="price-old">$107.900</span>
+              <span class="price-discount">22% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $18.718</div>
+            <a href="https://meli.la/1wgg4m9" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-termofuel">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: #ff3366; color: #fff;">🔥 Termogénico</div>
+            <img src="assets/images/quemador-termofuel.webp" alt="Thermo Fuel Star Nutrition" />
+            <div class="product-glow glow-red"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Quemadores de grasa</span>
+            <h3>Thermo Fuel Star Nutrition (120 caps)</h3>
+            <p>Potente termogénico que eleva el gasto calórico diario y aporta energía explosiva para entrenar.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$26.250</span>
+              <span class="price-old">$32.070</span>
+              <span class="price-discount">18% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">3 cuotas sin interés de $8.750</div>
+            <a href="https://meli.la/1t9dVnz" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-biotina">
+          <div class="product-img-wrap">
+            <div class="urgency-badge pulse" style="background: #eab308; color: #000;">⚡ Oferta Relámpago <span class="countdown" data-time="7200">02:00:00</span></div>
+            <img src="assets/images/biotina.png" alt="Biotina DR.SKIN" />
+            <div class="product-glow glow-green"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Salud capilar</span>
+            <h3>Biotina DR.SKIN</h3>
+            <p>Suplemento dietario a base de biotina para fortalecer tu cabello, piel y uñas desde la raíz.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$11.290</span>
+              <span class="price-old">$21.250</span>
+              <span class="price-discount">46% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $2.540</div>
+            <a href="https://meli.la/2a4wMPM" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-piso-goma-eva">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: var(--green); color: #fff;">Alta Densidad</div>
+            <img src="assets/images/piso-goma-eva.webp" alt="Piso Goma Eva Encastrable Pack x4" />
+            <div class="product-glow glow-green"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Equipamiento</span>
+            <h3>Piso Goma Eva Encastrable 60x60 (x4)</h3>
+            <p>Pack de 4 placas con bordes, 10mm de espesor, impermeable y antideslizante para proteger tu piso.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$18.990</span>
+              <span class="price-old">$32.990</span>
+              <span class="price-discount">42% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $13.260</div>
+            <a href="https://meli.la/1wGBf6g" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-cla">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: #ff3366; color: #fff;">🔥 Definición</div>
+            <img src="assets/images/cla-1000.webp" alt="CLA 1000 Star Nutrition" />
+            <div class="product-glow glow-red"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Quemadores de grasa</span>
+            <h3>CLA 1000 Star Nutrition (90 caps)</h3>
+            <p>Ácido Linoleico Conjugado de máxima pureza. Reduce grasa corporal sin estimulantes.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$27.576</span>
+              <span class="price-old">$29.028</span>
+              <span class="price-discount">5% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas sin interés de $4.596</div>
+            <a href="https://meli.la/1qBjZtH" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-nad">
+          <div class="product-img-wrap">
+            <div class="urgency-badge">Más vendido</div>
+            <img src="assets/images/nad-resveratrol.png" alt="NAD + Resveratrol" />
+            <div class="product-glow glow-purple"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Vitalidad celular</span>
+            <h3>NAD + Resveratrol</h3>
+            <p>Energía celular, longevidad, reparación del ADN y soporte cognitivo avanzado.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$29.725</span>
+              <span class="price-old">$46.850</span>
+              <span class="price-discount">36% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">3 cuotas sin interés de $9.908</div>
+            <a href="https://meli.la/2fmgo1Y" target="_blank" rel="noopener" class="btn btn-buy">Quiero este resultado</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-balanza">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: #00b8d9; color: #fff;">Bluetooth App</div>
+            <img src="assets/images/balanza.webp" alt="Balanza Digital Bluetooth Femmto" />
+            <div class="product-glow glow-blue"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Equipamiento</span>
+            <h3>Balanza Digital Bluetooth Corporal</h3>
+            <p>Balanza inteligente Femmto hasta 180kg con conectividad app para seguimiento preciso de tu progreso.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$14.999</span>
+              <span class="price-old">$27.999</span>
+              <span class="price-discount">46% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">3 cuotas sin interés de $5.000</div>
+            <a href="https://meli.la/2KZCDEF" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-cafe-verde">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: var(--green); color: #fff;">100% Natural</div>
+            <img src="assets/images/cafe-verde.webp" alt="Pastillas Café Verde Vitatech" />
+            <div class="product-glow glow-green"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Quemadores de grasa</span>
+            <h3>Café Verde Vitatech (60 caps)</h3>
+            <p>Extracto natural antioxidante para control de apetito, aceleración metabólica y pérdida de peso saludable.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$17.632</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $3.967</div>
+            <a href="https://meli.la/32tnKSi" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-creatina">
+          <div class="product-img-wrap">
+            <div class="urgency-badge">Últimas unidades</div>
+            <img src="assets/images/creatina-pura.png" alt="Creatina Pura 500g" />
+            <div class="product-glow"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Rendimiento físico</span>
+            <h3>Creatina Pura 500g</h3>
+            <p>Mejora tu rendimiento físico, fuerza, resistencia y recuperación muscular.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$17.590</span>
+              <span class="price-old">$21.988</span>
+              <span class="price-discount">20% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">3 cuotas sin interés de $5.863</div>
+            <a href="https://meli.la/12bUda4" target="_blank" rel="noopener" class="btn btn-buy">Quiero este resultado</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-triptofano">
+          <div class="product-img-wrap">
+            <div class="urgency-badge">Súper Promoción</div>
+            <img src="assets/images/triptofanos.jpg" alt="Triptófano" />
+            <div class="product-glow glow-purple"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Sueño &amp; Bienestar</span>
+            <h3>Triptófano Pack x3</h3>
+            <p>Super promoción pack x3: 180 comp para 3 meses. Aliado natural contra el estrés, ansiedad e insomnio.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$41.147</span>
+              <span class="price-old">$56.523</span>
+              <span class="price-discount">27% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">3 cuotas sin interés de $13.716</div>
+            <a href="https://meli.la/2R1ZY1f" target="_blank" rel="noopener" class="btn btn-buy">Quiero este resultado</a>
+          </div>
+        </article>
+
+        <article class="product-card reveal" id="prod-magnesio">
+          <div class="product-img-wrap">
+            <img src="assets/images/citrato-magnesio.png" alt="Citrato de Magnesio" />
+            <div class="product-glow glow-blue"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Salud muscular</span>
+            <h3>Citrato de Magnesio</h3>
+            <p>Salud muscular, nerviosa, digestiva y equilibrio mineral de todo tu organismo.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$17.999</span>
+              <span class="price-old">$51.438</span>
+              <span class="price-discount">25% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $3.613</div>
+            <a href="https://meli.la/2HaEB9U" target="_blank" rel="noopener" class="btn btn-buy">Lo necesito ahora</a>
+          </div>
+        </article>
+
+        <!-- MACA PERUANA -->
+        <article class="product-card reveal" id="prod-maca-peruana">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: var(--green); color: #fff;">24% OFF</div>
+            <img src="assets/images/maca-peruana.webp" alt="Maca Peruana Labs Nutrition" />
+            <div class="product-glow glow-green"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Vitalidad celular</span>
+            <h3>Maca Peruana 500mg (60 caps)</h3>
+            <p>Maca amarilla Labs Nutrition. Aporte de energía natural, balance hormonal y resistencia física.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$17.900</span>
+              <span class="price-old">$35.157</span>
+              <span class="price-discount">5% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $17.845</div>
+            <a href="https://meli.la/2Fe6o86" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <!-- CREATINA ENA FRUIT PUNCH -->
+        <article class="product-card reveal" id="prod-creatina-ena-punch">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: #009ee3; color: #fff;">Fruit Punch</div>
+            <img src="assets/images/creatina-ena-nueva.webp" alt="Creatina ENA Fruit Punch 300g" />
+            <div class="product-glow glow-blue"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Rendimiento físico</span>
+            <h3>Creatina ENA 300g Fruit Punch</h3>
+            <p>Creatina micronizada 60 servicios con sabor Fruit Punch para potenciar fuerza, masa muscular y recuperación.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$30.000</span>
+              <span class="price-old">$37.501</span>
+              <span class="price-discount">20% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $11.926</div>
+            <a href="https://meli.la/1UNqWrg" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <!-- BISGLICINATO DE MAGNESIO LABS NUTRITION -->
+        <article class="product-card reveal" id="prod-bisglicinato-labs">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: #00b8d9; color: #fff;">Alta Absorción</div>
+            <img src="assets/images/bisglicinato-magnesio-nuevo.webp" alt="Bisglicinato Magnesio Labs Nutrition" />
+            <div class="product-glow glow-blue"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Bienestar &amp; Relax</span>
+            <h3>Bisglicinato Magnesio 500mg</h3>
+            <p>Magnesio quelado Labs Nutrition x60 cápsulas. Relajación muscular, control de ansiedad y sueño profundo.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$16.501</span>
+              <span class="price-old">$20.626</span>
+              <span class="price-discount">20% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">3 cuotas sin interés de $5.500</div>
+            <a href="https://meli.la/1FY8bZy" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+        <!-- L-ARGININA + L-CITRULINA + GINSENG -->
+        <article class="product-card reveal" id="prod-arginina-citrulina-ginseng">
+          <div class="product-img-wrap">
+            <div class="urgency-badge pulse" style="background: #eab308; color: #000;">⚡ M1 Energy</div>
+            <img src="assets/images/arginina-citrulina-ginseng.webp" alt="L-Arginina + L-Citrulina + Ginseng M1 Energy Bylappiel" />
+            <div class="product-glow glow-red"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Rendimiento físico</span>
+            <h3>Arginina + Citrulina + Ginseng M1</h3>
+            <p>Fórmula pre-workout con óxido nítrico y Ginseng para congestión muscular extrema, energía y vigor.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$18.859</span>
+              <span class="price-old">$20.499</span>
+              <span class="price-discount">8% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $6.323</div>
+            <a href="https://meli.la/2YW68Ap" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="pagination-controls reveal" id="paginationControls">
+        <!-- Pagination will be rendered here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEMADORES SECTION -->
+  <section id="quemadores">
+    <div class="container">
+      <div class="quemadores-header">
+        <span class="quemador-badge reveal">🔥 Sección Especial</span>
+        <h2 class="reveal">Quemá grasa. <span class="accent">Definí tu cuerpo.</span></h2>
+        <p class="reveal">Suplementos diseñados para acelerar tu metabolismo y maximizar la quema de grasa de forma segura y efectiva.</p>
+      </div>
+      <div class="quemadores-grid">
+        <article class="product-card reveal">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: #ff3366;">Top Seller</div>
+            <img src="assets/images/combo-quemador.webp" alt="Combo Carnitina + Hydroxy Max ENA" />
+            <div class="product-glow glow-red"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag" style="background:rgba(255,51,102,.08);color:#ff3366;">Quemador Estrella</span>
+            <h3>Combo Carnitina + Hydroxy Max</h3>
+            <p>Doble acción quemadora con Carnitina pura y Hydroxy Max para máxima definición y energía.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$34.274</span>
+              <span class="price-old">$45.699</span>
+              <span class="price-discount">25% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $28.640</div>
+            <a href="https://meli.la/2D2Dbct" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+        <article class="product-card reveal">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: #ff3366;">Termogénico Potente</div>
+            <img src="assets/images/quemador-termofuel.webp" alt="Thermo Fuel Star Nutrition" />
+            <div class="product-glow glow-red"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag" style="background:rgba(255,51,102,.08);color:#ff3366;">Termogénico</span>
+            <h3>Thermo Fuel Star Nutrition</h3>
+            <p>120 cápsulas para acelerar el metabolismo basal y oxidar tejido adiposo rebelde.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$26.250</span>
+              <span class="price-old">$32.070</span>
+              <span class="price-discount">18% OFF</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">3 cuotas sin interés de $8.750</div>
+            <a href="https://meli.la/1t9dVnz" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+        <article class="product-card reveal">
+          <div class="product-img-wrap">
+            <div class="urgency-badge" style="background: var(--green); color: #fff;">100% Natural</div>
+            <img src="assets/images/cafe-verde.webp" alt="Café Verde Vitatech" />
+            <div class="product-glow glow-green"></div>
+          </div>
+          <div class="product-info">
+            <span class="product-tag" style="background:rgba(0,201,109,.08);color:var(--green);">100% Natural</span>
+            <h3>Café Verde Vitatech</h3>
+            <p>Antioxidante natural en 60 cápsulas que ayuda a controlar la ansiedad y reducir grasa sin taquicardia.</p>
+                        <div class="price-wrap">
+              <span class="price-current">$17.632</span>
+            </div>
+            <div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">6 cuotas de $3.967</div>
+            <a href="https://meli.la/32tnKSi" target="_blank" rel="noopener" class="btn btn-buy">Comprar ahora</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPRA SEGURA -->
+  <section id="pagos">
+    <div class="container">
+      <div class="payment-box reveal">
+        <h2>Compra <span class="accent">100% Segura</span></h2>
+        <p>Todas las compras están protegidas por <strong>Mercado Libre</strong>.</p>
+        <div class="payment-icons">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+              <line x1="1" y1="10" x2="23" y2="10" />
+            </svg>
+            Tarjetas y Cuotas
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="1" x2="12" y2="23" />
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
+            Rapipago / Pago Fácil
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13" rx="1" />
+              <path d="M16 8h4l3 5v3h-7V8z" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg>
+            Mercado Envíos
+          </span>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+              <path d="M21 3v5h-5" />
+              <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+              <path d="M8 16H3v5" />
+            </svg>
+            Devoluciones vía ML
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- RECETAS Y CONSEJOS -->
+  <section id="recetas">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker reveal">Recetas & Consejos</div>
+        <h2 class="section-title reveal">TRANSFORMÁ TU CUERPO<br /><span class="accent">DESDE LA COCINA</span></h2>
+        <p class="section-sub reveal">Recetas fit y consejos basados en evidencia para ayudarte a bajar de peso de forma saludable.</p>
+      </div>
+
+      <div class="recetas-grid">
+        <!-- RECETA 1 -->
+        <div class="receta-card reveal">
+          <div class="receta-img">
+            <img src="assets/images/receta-batido-quemagrasa.jpg" alt="Batido quemagrasa post-entreno" />
+            <span class="receta-img-overlay">Post-Entreno</span>
+          </div>
+          <div class="receta-body">
+            <h3>Batido quemagrasa post-entreno</h3>
+            <p>Whey protein + banana + canela + hielo. El combo perfecto para recuperar músculo y activar tu metabolismo después de entrenar.</p>
+            <a href="receta-batido-quemagrasa.html" class="receta-link">Ver receta completa &rarr;</a>
+          </div>
+        </div>
+
+        <!-- RECETA 2 -->
+        <div class="receta-card reveal">
+          <div class="receta-img">
+            <img src="assets/images/receta-bowl-proteico.jpg" alt="Bowl proteico para ganar músculo" />
+            <span class="receta-img-overlay">Hipertrofia</span>
+          </div>
+          <div class="receta-body">
+            <h3>Bowl proteico para ganar músculo</h3>
+            <p>Arroz integral + pollo + palta + huevo. Alto en proteínas y grasas saludables para maximizar tus ganancias musculares.</p>
+            <a href="receta-bowl-proteico.html" class="receta-link">Ver receta completa &rarr;</a>
+          </div>
+        </div>
+
+        <!-- RECETA 3 -->
+        <div class="receta-card reveal">
+          <div class="receta-img">
+            <img src="assets/images/receta-snack-preentreno.jpg" alt="Snack fit para antes de entrenar" />
+            <span class="receta-img-overlay">Pre-Entreno</span>
+          </div>
+          <div class="receta-body">
+            <h3>Snack fit para antes de entrenar</h3>
+            <p>Tostada integral + banana + mantequilla de maní + chía. Energía natural sostenida para rendir al máximo sin pesadez.</p>
+            <a href="receta-snack-preentreno.html" class="receta-link">Ver receta completa &rarr;</a>
+          </div>
+        </div>
+
+        <!-- RECETA 4 -->
+        <div class="receta-card reveal">
+          <div class="receta-img">
+            <img src="assets/images/receta-cena-definicion.jpg" alt="Cena liviana para definición" />
+            <span class="receta-img-overlay">Definición</span>
+          </div>
+          <div class="receta-body">
+            <h3>Cena liviana para definición</h3>
+            <p>Merluza a la plancha + espárragos + limón. Ultra baja en calorías, alta en proteínas puras. Perfecta para fase de corte.</p>
+            <a href="receta-cena-definicion.html" class="receta-link">Ver receta completa &rarr;</a>
+          </div>
+        </div>
+
+        <!-- RECETA 5 -->
+        <div class="receta-card reveal">
+          <div class="receta-img">
+            <img src="assets/images/receta-pancakes-proteicos.jpg" alt="Pancakes proteicos de avena" />
+            <span class="receta-img-overlay">Desayuno Fit</span>
+          </div>
+          <div class="receta-body">
+            <h3>Pancakes proteicos de avena</h3>
+            <p>Avena + Whey Protein + banana + arándanos. Desayuno saciante, esponjoso y anabólico sin azúcares refinados.</p>
+            <a href="receta-pancakes-proteicos.html" class="receta-link">Ver receta completa &rarr;</a>
+          </div>
+        </div>
+
+        <!-- RECETA 6 -->
+        <div class="receta-card reveal">
+          <div class="receta-img">
+            <img src="assets/images/receta-ensalada-quinoa.jpg" alt="Ensalada energética con quinoa" />
+            <span class="receta-img-overlay">Energía & Salud</span>
+          </div>
+          <div class="receta-body">
+            <h3>Ensalada energética con quinoa</h3>
+            <p>Quinoa + pollo grillado + palta + batata + espinaca. Bomba de micronutrientes, fibra y electrolitos para tus células.</p>
+            <a href="receta-ensalada-quinoa.html" class="receta-link">Ver receta completa &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONSEJOS -->
+      <div class="section-header" style="margin-top:72px">
+        <div class="section-kicker reveal">💡 Guía Científica</div>
+        <h2 class="section-title reveal" style="font-size:clamp(1.7rem,3.2vw,2.4rem)">Estrategias clave para <span class="accent">bajar de peso y definir</span></h2>
+        <p class="section-sub reveal" style="max-width:720px;margin:0 auto">Principios nutricionales, fisiológicos y de entrenamiento comprobados por la ciencia para oxidar grasa sin perder masa muscular ni sufrir efecto rebote.</p>
+      </div>
+
+      <div class="consejos-grid">
+        <!-- TIP 1: DÉFICIT CALÓRICO -->
+        <div class="consejo-card reveal">
+          <div class="consejo-header">
+            <div class="consejo-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <div>
+              <span class="consejo-tag">Pilar Nutricional</span>
+              <h4>Déficit calórico inteligente y sostenible</h4>
+            </div>
+          </div>
+          <div class="consejo-content">
+            <p>La pérdida de grasa responde a la primera ley de la termodinámica: gastar más energía de la que consumís. Sin embargo, los déficits extremos (>700 kcal) ralentizan tu tiroides, elevan el cortisol y destruyen tu masa muscular.</p>
+            <ul class="consejo-list">
+              <li><span class="bullet">✓</span> <strong>Déficit moderado:</strong> Reducí entre 300 y 500 kcal sobre tu gasto total diario (TDEE).</li>
+              <li><span class="bullet">✓</span> <strong>Ritmo saludable:</strong> Apuntá a perder entre el 0.5% y el 1% de tu peso corporal por semana.</li>
+              <li><span class="bullet">✓</span> <strong>Adherencia:</strong> No elimines grupos enteros de alimentos; la flexibilidad garantiza el éxito a largo plazo.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TIP 2: PROTEÍNA Y EFECTO TÉRMICO -->
+        <div class="consejo-card reveal">
+          <div class="consejo-header">
+            <div class="consejo-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 7.5v9"></path>
+                <path d="M18 7.5v9"></path>
+                <path d="M6.5 6.5h11"></path>
+                <path d="M6.5 17.5h11"></path>
+                <path d="M3 9.5h3v5H3z"></path>
+                <path d="M18 9.5h3v5h-3z"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="consejo-tag">Composición Corporal</span>
+              <h4>Consumo estratégico de proteína y saciedad</h4>
+            </div>
+          </div>
+          <div class="consejo-content">
+            <p>La proteína es el macronutriente más saciante y con mayor Efecto Térmico de los Alimentos (TEF): tu organismo quema entre el 20% y el 30% de sus calorías únicamente en el proceso de digestión y absorción.</p>
+            <ul class="consejo-list">
+              <li><span class="bullet">✓</span> <strong>Rango óptimo:</strong> Consumí de 1.8 a 2.2 gramos de proteína por kilo de peso corporal al día.</li>
+              <li><span class="bullet">✓</span> <strong>Protección muscular:</strong> En déficit calórico, la proteína evita que tu cuerpo catabolice músculo magro.</li>
+              <li><span class="bullet">✓</span> <strong>Control del apetito:</strong> Estimula hormonas de saciedad como el péptido YY y reduce la grelina.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TIP 3: ENTRENAMIENTO DE FUERZA -->
+        <div class="consejo-card reveal">
+          <div class="consejo-header">
+            <div class="consejo-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <span class="consejo-tag">Estímulo Físico</span>
+              <h4>Priorizá la fuerza sobre el cardio excesivo</h4>
+            </div>
+          </div>
+          <div class="consejo-content">
+            <p>Hacer horas interminables de cardio sin levantar pesas le indica a tu cuerpo que el músculo es prescindible. El entrenamiento de fuerza con sobrecarga progresiva preserva tu masa muscular y mantiene tu tasa metabólica basal alta.</p>
+            <ul class="consejo-list">
+              <li><span class="bullet">✓</span> <strong>Estímulo anabólico:</strong> Entrená fuerza 3 a 5 veces por semana con intensidad y buena técnica.</li>
+              <li><span class="bullet">✓</span> <strong>Gasto en reposo:</strong> Cada kilo de músculo incrementa las calorías que quemás las 24 horas del día.</li>
+              <li><span class="bullet">✓</span> <strong>Cardio estratégico:</strong> Usá el cardio como herramienta complementaria de salud, no como castigo por comer.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TIP 4: NEAT Y PASOS DIARIOS -->
+        <div class="consejo-card reveal">
+          <div class="consejo-header">
+            <div class="consejo-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div>
+              <span class="consejo-tag">Metabolismo Activo</span>
+              <h4>Maximizá tu NEAT (Actividad Diaria)</h4>
+            </div>
+          </div>
+          <div class="consejo-content">
+            <p>El NEAT (actividad física no asociada al ejercicio) representa hasta el 20-25% de tu gasto calórico diario, mientras que el entrenamiento formal solo ronda el 5-10%. Moverte más fuera del gimnasio acelera la quema de grasa sin fatiga.</p>
+            <ul class="consejo-list">
+              <li><span class="bullet">✓</span> <strong>Meta diaria:</strong> Caminá entre 8.000 y 12.000 pasos al día para quemar 300-500 kcal extra.</li>
+              <li><span class="bullet">✓</span> <strong>Micro-hábitos:</strong> Usá escaleras en vez de ascensor, caminá en llamadas y hacé pausas activas.</li>
+              <li><span class="bullet">✓</span> <strong>Cero estrés articular:</strong> El movimiento de baja intensidad no compromete la recuperación muscular.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TIP 5: SUPLEMENTACIÓN CIENTÍFICA -->
+        <div class="consejo-card reveal">
+          <div class="consejo-header">
+            <div class="consejo-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="consejo-tag">Suplementación</span>
+              <h4>Suplementación estratégica basada en evidencia</h4>
+            </div>
+          </div>
+          <div class="consejo-content">
+            <p>Los suplementos bien formulados potencian tus resultados cuando la base nutricional y de entrenamiento está en su lugar. Ayudan a oxidar ácidos grasos, controlar antojos y mantener la energía alta.</p>
+            <ul class="consejo-list">
+              <li><span class="bullet">✓</span> <strong>L-Carnitina & Termogénicos:</strong> Transportan lípidos hacia las mitocondrias para convertirlos en energía en el entreno.</li>
+              <li><span class="bullet">✓</span> <strong>CLA & Café Verde:</strong> Contribuyen a la partición de nutrientes y reducen la absorción de glucosa.</li>
+              <li><span class="bullet">✓</span> <strong>Whey Protein:</strong> Facilita alcanzar tu requerimiento proteico diario de forma rápida y baja en calorías.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TIP 6: SUEÑO Y CORTISOL -->
+        <div class="consejo-card reveal">
+          <div class="consejo-header">
+            <div class="consejo-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="consejo-tag">Salud Hormonal</span>
+              <h4>Calidad del sueño y control del cortisol</h4>
+            </div>
+          </div>
+          <div class="consejo-content">
+            <p>Dormir menos de 7 horas diarias desregula las hormonas del apetito: eleva la grelina (que dispara la ansiedad por ultraprocesados y azúcar) y disminuye la leptina (que le indica al cerebro que estás satisfecho).</p>
+            <ul class="consejo-list">
+              <li><span class="bullet">✓</span> <strong>7 a 8 horas de sueño:</strong> Crucial para optimizar la testosterona, la hormona de crecimiento y la insulina.</li>
+              <li><span class="bullet">✓</span> <strong>Bajar el cortisol:</strong> El estrés crónico favorece el almacenamiento de grasa abdominal y la retención de líquidos.</li>
+              <li><span class="bullet">✓</span> <strong>Aliados naturales:</strong> Magnesio Bisglicinato y Triptófano antes de dormir mejoran la fase REM y la relajación.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUESTRA HISTORIA -->
+  <section id="filosofia">
+    <div class="container">
+      <div class="historia-label reveal">Nuestra Historia</div>
+      <div class="historia-split">
+        <div class="historia-text">
+          <h2 class="reveal">MENTE Y CUERPO.<br /><span class="accent">UN SOLO SISTEMA.</span></h2>
+          <p class="reveal">EntrenaMente nació de una pregunta simple: ¿Por qué tantos suplementos prometen mucho y
+            entregan poco? La respuesta estaba en la falta de honestidad, en ingredientes de relleno y en marketing
+            vacío.</p>
+          <p class="reveal">Nosotros elegimos otro camino. Cada producto en nuestro catálogo fue seleccionado con base
+            en evidencia, biodisponibilidad y resultados reales. Nada de fórmulas secretas, nada de proprietary blends.
+          </p>
+          <p class="reveal">Creemos que el cuerpo y la mente son un sistema único. Cuando optimizás uno, el otro
+            responde. Por eso nuestro enfoque va más allá de los músculos: atacamos el rendimiento desde adentro.</p>
+          <div class="historia-pillars reveal">
+            <div class="pillar">
+              <span class="pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" />
+                </svg>
+              </span>
+              <span>Evidencia científica</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              </span>
+              <span>Calidad premium</span>
+            </div>
+            <div class="pillar">
+              <span class="pillar-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </span>
+              <span>Sin ingredientes de relleno</span>
+            </div>
+          </div>
+        </div>
+        <div class="historia-stats">
+          <div class="h-stat reveal">
+            <span class="h-stat-num">+2.000</span>
+            <span class="h-stat-label">Clientes que ya rinden mejor</span>
+          </div>
+          <div class="h-stat reveal">
+            <span class="h-stat-num">100%</span>
+            <span class="h-stat-label">Compra segura<br /><small>Vía Mercado Libre</small></span>
+          </div>
+          <div class="h-stat reveal">
+            <span class="h-stat-num">4.9★</span>
+            <span class="h-stat-label">Calificación<br /><small>Promedio clientes</small></span>
+          </div>
+          <div class="historia-quote reveal">
+            <p>"Miles de clientes confían en EntrenaMente para equiparse y optimizar su nutrición y rendimiento día a día. Seleccionamos los suplementos y artículos fitness más efectivos con compra 100% segura por Mercado Libre."</p>
+            <cite>— Equipo EntrenaMente</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-kicker reveal">Lo que dicen nuestros clientes</p>
+        <h2 class="section-title reveal">MILES DE CLIENTES<br /><span class="accent">SATISFECHOS</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Llevo 3 meses con la creatina de EntrenaMente y los saltos en mi press de banca fueron
+            increíbles. Un producto sin vueltas, de verdad funciona."</blockquote>
+          <div class="test-footer">
+            <div class="test-avatar">
+              <img src="assets/images/avatar-matias.jpg" alt="Matías R." />
+            </div>
+            <div>
+              <cite>Matías R.</cite>
+              <span class="test-role">🏋️ Powerlifter Amateur</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>"El triptófano me cambió la vida durante el período de exámenes. Duermo mejor, estoy más enfocada
+            y el estrés bajó muchísimo."</blockquote>
+          <div class="test-footer">
+            <div class="test-avatar">
+              <img src="assets/images/avatar-valentina.jpg" alt="Valentina G." />
+            </div>
+            <div>
+              <cite>Valentina G.</cite>
+              <span class="test-role">🎓 Estudiante de medicina</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Recomiendo EntrenaMente a todos mis clientes. La calidad es top y el servicio es impecable. Los
+            pedidos llegan rápido y bien embalados."</blockquote>
+          <div class="test-footer">
+            <div class="test-avatar">
+              <img src="assets/images/avatar-lucas.jpg" alt="Lucas D." />
+            </div>
+            <div>
+              <cite>Lucas D.</cite>
+              <span class="test-role">💪 Entrenador personal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMAIL CAPTURE -->
+  <section id="lead-magnet">
+    <div class="container">
+      <div class="lead-box reveal">
+        <h2>Descarga gratis el <span class="accent">Manual EntrenaMente</span></h2>
+        <p>Aprende a mejorar tu enfoque, disciplina y rendimiento con entrenamiento + suplementos.</p>
+
+        <!-- MailerLite Form -->
+        <div id="mlb2-40449834" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-40449834">
+          <div class="row-form">
+            <form class="lead-form ml-block-form"
+              action="https://assets.mailerlite.com/jsonp/2295816/forms/185862821049796227/subscribe" data-code=""
+              method="post" target="_blank">
+              <div class="input-group ml-field-group ml-field-name">
+                <input aria-label="name" type="text" name="fields[name]" placeholder="Tu nombre"
+                  autocomplete="given-name" required />
+              </div>
+              <div class="input-group ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                <input aria-label="email" aria-required="true" type="email" name="fields[email]"
+                  placeholder="Tu correo electrónico" autocomplete="email" required />
+              </div>
+
+              <input type="hidden" name="ml-submit" value="1">
+              <input type="hidden" name="anticsrf" value="true">
+
+              <div class="ml-form-embedSubmit">
+                <button type="submit" class="btn btn-primary primary">Quiero el manual ahora</button>
+                <button disabled="disabled" style="display: none; width: 100%; text-align: center;" type="button"
+                  class="loading btn btn-primary">
+                  Cargando...
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="ml-form-successBody row-success" style="display: none">
+            <div class="ml-form-successContent lead-success-msg" style="display: block;">
+              <p>✅ ¡Listo! Revisa tu correo para descargar el manual.</p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function ml_webform_success_40449834() {
+            var $ = window.ml_jQuery || window.jQuery;
+            if ($) {
+              $('.ml-subscribe-form-40449834 .row-success').show();
+              $('.ml-subscribe-form-40449834 .row-form').hide();
+            } else {
+              document.querySelector('.ml-subscribe-form-40449834 .row-success').style.display = 'block';
+              document.querySelector('.ml-subscribe-form-40449834 .row-form').style.display = 'none';
+            }
+          }
+        </script>
+        <script src="https://groot.mailerlite.com/js/w/webforms.min.js?vb397d78ebaa8a0f631d35384c46d781b"
+          type="text/javascript"></script>
+        <script>
+          fetch("https://assets.mailerlite.com/jsonp/2295816/forms/185862821049796227/takel");
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="faq-header">
+        <div class="section-kicker reveal">Preguntas Frecuentes</div>
+        <h2 class="faq-title reveal">TODO LO QUE<br /><span class="accent">NECESITÁS SABER</span></h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-category">Cómo Comprar</div>
+        <div class="faq-item reveal">
+          <button class="faq-btn">
+            <span>¿Cómo compro los productos de EntrenaMente?</span>
+            <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></span>
+          </button>
+          <div class="faq-content">
+            <p>Todos nuestros productos se compran a través de Mercado Libre. Hacé clic en el botón de compra en el
+              producto que te interesa y te llevamos directo al anuncio oficial. Ahí podés ver descripción completa,
+              fotos y completar tu compra de forma segura.</p>
+          </div>
+        </div>
+
+        <div class="faq-category">Pagos</div>
+        <div class="faq-item reveal">
+          <button class="faq-btn">
+            <span>¿Qué métodos de pago aceptan?</span>
+            <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></span>
+          </button>
+          <div class="faq-content">
+            <p>Aceptamos todos los medios de pago disponibles en Mercado Pago: tarjetas de débito y crédito (hasta 12
+              cuotas), efectivo en Rapipago y Pago Fácil, y transferencias bancarias. Tu pago está protegido por Mercado
+              Pago en todo momento.</p>
+          </div>
+        </div>
+
+        <div class="faq-category">Envíos</div>
+        <div class="faq-item reveal">
+          <button class="faq-btn">
+            <span>¿Cómo funcionan los envíos?</span>
+            <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></span>
+          </button>
+          <div class="faq-content">
+            <p>Los envíos se realizan a través de Mercado Envíos a todo el país. El tiempo de entrega varía según tu
+              ubicación: entre 1-3 días hábiles para AMBA y 3-7 días para el resto del país. El costo de envío se
+              calcula automáticamente al completar tu compra en Mercado Libre.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-btn">
+            <span>¿Cuánto tarda en llegar mi pedido?</span>
+            <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></span>
+          </button>
+          <div class="faq-content">
+            <p>El despacho se realiza dentro de las primeras 24hs hábiles después de confirmado el pago. Desde ahí,
+              Mercado Envíos te mantiene informado con el tracking de tu pedido en tiempo real.</p>
+          </div>
+        </div>
+
+        <div class="faq-category">Devoluciones</div>
+        <div class="faq-item reveal">
+          <button class="faq-btn">
+            <span>¿Puedo devolver un producto?</span>
+            <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></span>
+          </button>
+          <div class="faq-content">
+            <p>Sí. Las devoluciones se gestionan directamente a través de Mercado Libre y están protegidas por su
+              política oficial. Si tu producto llegó en mal estado o no es lo que esperabas, iniciá la devolución desde
+              tu cuenta de ML dentro de los 30 días de recibido.</p>
+          </div>
+        </div>
+
+        <div class="faq-category">Suplementos</div>
+        <div class="faq-item reveal">
+          <button class="faq-btn">
+            <span>¿Necesito receta médica para comprar estos suplementos?</span>
+            <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></span>
+          </button>
+          <div class="faq-content">
+            <p>No. Todos los productos de EntrenaMente son suplementos alimentarios de venta libre. Sin embargo, si
+              tenés alguna condición médica, estás embarazada o tomás medicación, te recomendamos consultar con tu
+              médico antes de comenzar cualquier suplementación.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-btn">
+            <span>¿Cuánto tarda en hacer efecto la creatina?</span>
+            <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></span>
+          </button>
+          <div class="faq-content">
+            <p>Los efectos de la creatina generalmente se empiezan a notar entre los 7 y 14 días de uso consistente. Si
+              hacés una fase de carga (20g/día por 5-7 días), los efectos pueden aparecer más rápido. La clave es la
+              consistencia diaria.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-btn">
+            <span>¿Se puede combinar el magnesio con otros suplementos?</span>
+            <span class="faq-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg></span>
+          </button>
+          <div class="faq-content">
+            <p>Sí, el magnesio se combina perfectamente con la mayoría de los suplementos. De hecho, funciona muy bien
+              junto con la creatina y el triptófano. Lo ideal es tomarlo por la noche para potenciar su efecto relajante
+              y mejorar la calidad del sueño.</p>
+          </div>
+        </div>
+
+        <div class="faq-contact reveal">
+          <p>¿No encontrás tu respuesta?</p>
+          <a href="mailto:entrenamentesuplementos@gmail.com" class="faq-contact-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            Escribinos a entrenamentesuplementos@gmail.com →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="cta-final">
+    <canvas id="ctaCanvas"></canvas>
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="reveal">Tu siguiente nivel<br /><span class="accent">empieza hoy.</span></h2>
+        <p class="reveal">Puedes seguir igual… o puedes activar tu verdadero potencial.</p>
+        <a href="#productos" class="btn btn-primary btn-xl reveal">Empezar ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">Entrena<span>Mente</span></a>
+          <p>Tu tienda fitness online para suplementos, equipamiento y bienestar.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Productos</h4>
+          <ul>
+            <li><a href="https://meli.la/12bUda4" target="_blank" rel="noopener">Creatina Pura</a></li>
+            <li><a href="https://meli.la/2HaEB9U" target="_blank" rel="noopener">Citrato de Magnesio</a></li>
+            <li><a href="https://meli.la/2fmgo1Y" target="_blank" rel="noopener">NAD + Resveratrol</a></li>
+            <li><a href="https://meli.la/2oRXm9R" target="_blank" rel="noopener">Bisglicinato de Magnesio</a></li>
+            <li><a href="https://meli.la/2R1ZY1f" target="_blank" rel="noopener">Triptófano</a></li>
+            <li><a href="https://meli.la/1wUgGZm" target="_blank" rel="noopener">Whey Protein 1kg</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#filosofia">Nuestra filosofía</a></li>
+            <li><a href="#recetas">Recetas & Consejos</a></li>
+            <li><a href="mailto:entrenamentesuplementos@gmail.com">Contacto</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <div class="social-links">
+            <a href="https://instagram.com/entrenamente_suplementos" target="_blank" rel="noopener" class="social-btn"
+              aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="https://tiktok.com/@entrenamentesuplementos" target="_blank" rel="noopener" class="social-btn"
+              aria-label="TikTok">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61572076626824" target="_blank" rel="noopener"
+              class="social-btn" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 EntrenaMente. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY CTA -->
+  <a href="#productos" class="sticky-cta sticky-cta--right" id="stickyCta">⚡ Comprar ahora</a>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

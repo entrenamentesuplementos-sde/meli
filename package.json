@@ -1,0 +1,11 @@
+{
+  "name": "entrenamente-web",
+  "version": "1.0.0",
+  "description": "Sitio web de nutrición, suplementos y equipamiento EntrenaMente",
+  "scripts": {
+    "update-prices": "node scripts/update-prices.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
