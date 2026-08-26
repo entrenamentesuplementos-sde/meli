@@ -1,0 +1,37 @@
+name: Actualizar Precios de Mercado Libre
+
+on:
+  schedule:
+    - cron: '0 4,16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Ejecutar script de actualización de precios
+        run: node scripts/update-prices.js
+
+      - name: Confirmar y subir cambios
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --staged --quiet; then
+            echo "No hubo cambios en los precios. Todo actualizado."
+          else
+            git commit -m "chore(precios): actualización automática de precios en vivo"
+            git push
+          fi
