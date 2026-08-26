@@ -2,7 +2,8 @@ name: Actualizar Precios de Mercado Libre
 
 on:
   schedule:
-    - cron: '0 4,16 * * *'
+   - cron: '0 3 */2 * *'
+
   workflow_dispatch:
 
 permissions:
