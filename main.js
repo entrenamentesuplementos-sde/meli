@@ -150,16 +150,16 @@ document.querySelectorAll('.sidebar-cat-link').forEach(link => {
   }
 
   function filterAndPaginate() {
-    const searchTerm = searchInput.value.toLowerCase();
-    const category = categorySelect.value.toLowerCase();
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    const category = categorySelect.value.toLowerCase().trim();
     
     // Filter
     let filteredProducts = allProducts.filter(card => {
-      const title = card.querySelector('h3').textContent.toLowerCase();
-      const desc = card.querySelector('p').textContent.toLowerCase();
-      const tag = card.querySelector('.product-tag').textContent.toLowerCase();
+      const title = (card.querySelector('h3')?.textContent || '').toLowerCase();
+      const desc = (card.querySelector('p')?.textContent || '').toLowerCase();
+      const tag = (card.querySelector('.product-tag')?.textContent || '').toLowerCase();
       
-      const matchesSearch = title.includes(searchTerm) || desc.includes(searchTerm);
+      const matchesSearch = !searchTerm || title.includes(searchTerm) || desc.includes(searchTerm);
       const matchesCategory = category === 'all' || tag.includes(category) || category.includes(tag) || tag.includes(category.split(' ')[0]);
       
       return matchesSearch && matchesCategory;
@@ -167,12 +167,12 @@ document.querySelectorAll('.sidebar-cat-link').forEach(link => {
 
     // Pagination
     const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE) || 1;
-    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage > totalPages) currentPage = 1;
 
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = startIndex + ITEMS_PER_PAGE;
 
-    // Render
+    // Render cards
     allProducts.forEach(card => card.classList.add('hidden-product'));
     filteredProducts.slice(startIndex, endIndex).forEach(card => card.classList.remove('hidden-product'));
 
@@ -182,33 +182,60 @@ document.querySelectorAll('.sidebar-cat-link').forEach(link => {
 
   function renderPagination(totalPages) {
     paginationControls.innerHTML = '';
-    if (totalPages <= 1) return;
+    if (totalPages <= 1) {
+      paginationControls.style.display = 'none';
+      return;
+    }
+    paginationControls.style.display = 'flex';
 
     const scrollToProducts = () => {
       const target = document.getElementById('productos');
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     };
 
     const prevBtn = document.createElement('button');
     prevBtn.className = 'page-btn';
+    prevBtn.setAttribute('aria-label', 'Página anterior');
     prevBtn.textContent = '«';
     prevBtn.disabled = currentPage === 1;
-    prevBtn.addEventListener('click', () => { currentPage--; filterAndPaginate(); scrollToProducts(); });
+    prevBtn.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        filterAndPaginate();
+        scrollToProducts();
+      }
+    });
     paginationControls.appendChild(prevBtn);
 
     for (let i = 1; i <= totalPages; i++) {
       const btn = document.createElement('button');
       btn.className = `page-btn ${currentPage === i ? 'active' : ''}`;
+      btn.setAttribute('aria-label', `Página ${i}`);
       btn.textContent = i;
-      btn.addEventListener('click', () => { currentPage = i; filterAndPaginate(); scrollToProducts(); });
+      btn.addEventListener('click', () => {
+        if (currentPage !== i) {
+          currentPage = i;
+          filterAndPaginate();
+          scrollToProducts();
+        }
+      });
       paginationControls.appendChild(btn);
     }
 
     const nextBtn = document.createElement('button');
     nextBtn.className = 'page-btn';
+    nextBtn.setAttribute('aria-label', 'Página siguiente');
     nextBtn.textContent = '»';
     nextBtn.disabled = currentPage === totalPages;
-    nextBtn.addEventListener('click', () => { currentPage++; filterAndPaginate(); scrollToProducts(); });
+    nextBtn.addEventListener('click', () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        filterAndPaginate();
+        scrollToProducts();
+      }
+    });
     paginationControls.appendChild(nextBtn);
   }
 

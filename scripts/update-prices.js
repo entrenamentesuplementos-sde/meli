@@ -68,13 +68,6 @@ async function fetchProductInfo(meliUrl) {
       }
     }
 
-    // Override específico si se requiere la variante Full para algún producto particular
-    if (meliUrl === 'https://meli.la/1qBjZtH') {
-      currentPrice = 33000;
-      previousPrice = 69719;
-      discount = 52;
-      installments = '3 cuotas sin interés de $11.000';
-    }
 
     return {
       url: meliUrl,
@@ -230,7 +223,7 @@ async function updateIndexHtml() {
     priceWrapHtml += `\n            </div>`;
 
     newCard = newCard.replace(/<div class="price-wrap">[\s\S]*?<\/div>/, priceWrapHtml);
-    newCard = newCard.replace(/<div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">[^<]*<\/div>/, `<div style="color: #00b864; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 500;">${data.instStr}</div>`);
+    newCard = newCard.replace(/<div style="color:\s*#[0-9a-fA-F]+;\s*font-size:\s*0\.9rem;\s*margin-top:\s*-10px;\s*margin-bottom:\s*15px;\s*font-weight:\s*\d+;">[^<]*<\/div>/, `<div style="color: #00a650; font-size: 0.9rem; margin-top: -10px; margin-bottom: 15px; font-weight: 600;">${data.instStr}</div>`);
 
     catalogCount++;
     return newCard;
